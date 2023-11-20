@@ -305,7 +305,7 @@
 							"key": "file",
 							"contentType": "",
 							"type": "file",
-							"src": "/C:\\Users\\Prasanna\\Desktop\\Postman_API_Mavericks_Team6\\HyperThyroid_Report_final.pdf"
+							"src": "/C:/Users/Prasanna/Downloads/HyperThyroid_Report_final.pdf"
 						},
 						{
 							"key": "patientInfo",
@@ -428,7 +428,7 @@
 							"}\r",
 							"\r",
 							"pm.test('Schema is valid', () =>{\r",
-							"    pm.expect(tv4.validate(jsonData, schema)).to.be.false;\r",
+							"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
 							"});\r",
 							"\r",
 							"\r",
@@ -2138,7 +2138,7 @@
 						{
 							"key": "file",
 							"type": "file",
-							"src": "/C:\\Users\\Prasanna\\Desktop\\Postman_API_Mavericks_Team6\\HyperThyroid_Report_final.pdf"
+							"src": "/C:/Users/prasa/Downloads/HyperThyroid_Report_final.pdf"
 						}
 					]
 				},

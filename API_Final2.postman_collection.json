@@ -14,6 +14,10 @@
 					"listen": "test",
 					"script": {
 						"exec": [
+							"var jsonData=JSON.parse(responseBody);",
+							"pm.globals.set(\"token\",jsonData.token);",
+							"",
+							"",
 							"postman.setNextRequest(\"Create New Patient with assertion\");",
 							"",
 							""
@@ -182,7 +186,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaXJpc2hhbG9sZ3UyODExQGdtYWlsLmNvbSIsImlhdCI6MTcwMDM2MTgxMiwiZXhwIjoxNzAwMzkwNjEyfQ.jM7AxNtDXr7TEnjqCIxawg6KdVA614KlbPepY7wHNrm7dODhx6SjfZwWDkUNS-o2QNSsXoD_K5TkQ4DGTtW3gg",
+							"value": "{{token}}",
 							"type": "string"
 						}
 					]
@@ -265,7 +269,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaXJpc2hhbG9sZ3UyODExQGdtYWlsLmNvbSIsImlhdCI6MTcwMDM2MTgxMiwiZXhwIjoxNzAwMzkwNjEyfQ.jM7AxNtDXr7TEnjqCIxawg6KdVA614KlbPepY7wHNrm7dODhx6SjfZwWDkUNS-o2QNSsXoD_K5TkQ4DGTtW3gg",
+							"value": "{{token}}",
 							"type": "string"
 						}
 					]
@@ -353,7 +357,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaXJpc2hhbG9sZ3UyODExQGdtYWlsLmNvbSIsImlhdCI6MTcwMDM2MTgxMiwiZXhwIjoxNzAwMzkwNjEyfQ.jM7AxNtDXr7TEnjqCIxawg6KdVA614KlbPepY7wHNrm7dODhx6SjfZwWDkUNS-o2QNSsXoD_K5TkQ4DGTtW3gg",
+							"value": "{{token}}",
 							"type": "string"
 						}
 					]
@@ -414,7 +418,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaXJpc2hhbG9sZ3UyODExQGdtYWlsLmNvbSIsImlhdCI6MTcwMDM2MTgxMiwiZXhwIjoxNzAwMzkwNjEyfQ.jM7AxNtDXr7TEnjqCIxawg6KdVA614KlbPepY7wHNrm7dODhx6SjfZwWDkUNS-o2QNSsXoD_K5TkQ4DGTtW3gg",
+							"value": "{{token}}",
 							"type": "string"
 						}
 					]
@@ -478,7 +482,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaXJpc2hhbG9sZ3UyODExQGdtYWlsLmNvbSIsImlhdCI6MTcwMDM2MTgxMiwiZXhwIjoxNzAwMzkwNjEyfQ.jM7AxNtDXr7TEnjqCIxawg6KdVA614KlbPepY7wHNrm7dODhx6SjfZwWDkUNS-o2QNSsXoD_K5TkQ4DGTtW3gg",
+							"value": "{{token}}",
 							"type": "string"
 						}
 					]
@@ -551,7 +555,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaXJpc2hhbG9sZ3UyODExQGdtYWlsLmNvbSIsImlhdCI6MTcwMDM2MjcwNCwiZXhwIjoxNzAwMzkxNTA0fQ.QBoKm6mftyhuJXD0kv2jQzexVXmoCH-gYYrklWwELalZfhP493W6mX15tl_Q7Ze2nTJFKu5uTlRBtWJkrYqo0Q",
+							"value": "{{token}}",
 							"type": "string"
 						}
 					]
@@ -570,6 +574,24 @@
 				}
 			},
 			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "FirstName",
+			"value": ""
+		},
+		{
+			"key": "LastName",
+			"value": ""
+		},
+		{
+			"key": "Email",
+			"value": ""
+		},
+		{
+			"key": "patientId",
+			"value": ""
 		}
 	]
 }
